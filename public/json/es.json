@@ -1,0 +1,54 @@
+{
+    "title": "Empregos Domésticos em Curitiba",
+    "nav":
+        {
+            "home": "Home",
+            "about": "Sobre nós",
+            "hire": "Contratar",
+            "jobs": "Vagas",
+            "contact": "Fale conosco"
+        },
+    "h1": "Empregos domésticos em Curitiba e região",
+    "description": "A Dona Helena Empregos Domésticos está há mais de 20 anos no ramo de seleção e recrutamento de empregados domésticos.",
+    "about_h2": "Sobre nós",
+    "abouts": [
+        "Nossa empresa está no ramo doméstico há mais de 20 anos, priorizando sempre o atendimento diferenciado de cada cliente e as referências atuais dos dois últimos empregos de cada funcionário, assim como a checagem de seu CPF e os antecedentes criminais.",
+        "Depois de analisado, passamos para o cliente todas as referências das candidatas através do Whatsapp ou e-mail.",
+        "Nos comprometemos a atender cada cliente de uma maneira séria e transparente, passando todas a informações possíveis e deixando assim, você cliente, seguro de um bom atendimento.",
+        "As entrevistas são feitas na agência ou diretamente na casa do cliente, sempre acompanhado de um funcionário já pré selecionado."
+    ],
+    "excelence_h2": "20 anos de excelência",
+    "excelence": "Com mais de uma década e meia de atuação, já realizamos diversos contratos, resultando em vários clientes satisfeitos.",
+    "hire_h2": "Contratar",
+    "hires": [
+        "Precisando contratar com a garantia de segurança e qualidade?",
+        "Deixe seus dados no formulário que entraremos em contato o mais breve possível.",
+        "Nosso rigoroso critério de seleção garante toda segurança e comodidade para você e sua família."
+    ],
+    "jobs_h2": "Vagas disponíveis",
+    "jobs_message": "Se interessou por uma das vagas? Envie seu currículo clicando no botão abaixo ou entre em contato conosco pelo",
+    "jobs_cta": "Enviar currículo",
+    "phone_link": "41991918597",
+    "phone": "(41) 99191-8597",
+    "contact_h2": "Fale conosco",
+    "contact_description": "A Dona Helena Empregos está pronta para te atender. Se estiver procurando um emprego, preencha a ficha na seção",
+    "contact_above": "acima",
+    "address": "Av. República Argentina, 1237 - 8º andar",
+    "reference": "Próximo à estação tubo Dom Pedro I",
+
+    "form":
+    {
+        "name": "nome",
+        "phone": "Telefone",
+        "email": "E-mail",
+        "location": "Bairro/Cidade",
+        "hire_office": "Cargo solicitado",
+        "curriculum_office": "Cargo desejado",
+        "subject": "Assunto",
+        "message": "Mensagem",
+        "btn_hire": "Enviar dados",
+        "btn_submit": "ENVIAR",
+        "btn_cancel": "CANCELAR",
+        "hire_description": "Este espaço é destinado a contratantes. Caso esteja procurando um emprego, role a página e clique em Enviar currículo."
+    }
+}
