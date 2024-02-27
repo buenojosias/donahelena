@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Livewire\Cargos;
+use App\Livewire\Clientes;
+use App\Livewire\Curriculos;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{lang?}', LandingController::class);
-
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
-
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+Route::middleware(['auth', 'verified'])->group(function() {
+    Route::view('/admin', 'dashboard')->name('dashboard');
+    Route::get('/admin/cargos', Cargos::class)->name('cargos.index');
+    Route::get('/admin/clientes', Clientes::class)->name('clientes.index');
+    Route::get('/admin/curriculos', Curriculos::class)->name('curriculos.index');
+    Route::view('/admin/profile', 'profile')->name('profile');
+});
 
 require __DIR__.'/auth.php';
+
+// Route::get('/admin', function() {
+//     return 'asd';
+// });
+Route::get('/{lang?}', LandingController::class);
+
+
+
