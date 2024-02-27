@@ -38,7 +38,7 @@
 
     "form":
     {
-        "name": "nome",
+        "name": "Nome completo",
         "phone": "Telefone",
         "email": "E-mail",
         "location": "Bairro/Cidade",

@@ -9,11 +9,11 @@ class LandingController extends Controller
 {
     public function __invoke($lang = 'pt')
     {
+        if(!in_array($lang, ['pt', 'en', 'es']))
+        return abort(404);
+
         $json = \File::get('json/'.$lang.'.json');
         $data = json_decode($json);
-
-        if(!in_array($lang, ['pt', 'en', 'es']))
-            return abort(404);
 
         $lang_nome = 'nome_'.$lang;
 

@@ -36,7 +36,7 @@
                                         <tr>
                                             <td
                                                 class="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-                                                {{ $cliente->nome }}
+                                                <a href="{{ route('clientes.detalhes', $cliente) }}" wire:navigate>{{ $cliente->nome }}</a>
                                             </td>
                                             <td class="whitespace-nowrap p-4 text-sm text-gray-500">
                                                 {{ $cliente->cargo->nome_pt }}

@@ -113,37 +113,7 @@
                 </div>
                 <div class="col-md-6 formulario wow fadeInRight" data-wow-delay="0.6s">
                     <div class="contact-form">
-                        <form action="contratar" method="post">
-                            <input type="hidden" id="lang" name="lang" value="pt">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="nome" name="nome"
-                                    placeholder="{{ $data->form->name }}">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control tel" id="telefone" name="telefone"
-                                    placeholder="{{ $data->form->phone }}">
-                            </div>
-                            <div class="col-md-12">
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="{{ $data->form->email }}">
-                            </div>
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" id="bairro" name="bairro"
-                                    placeholder="{{ $data->form->location }}">
-                            </div>
-                            <div class="col-md-12">
-                                <select id="cargo" name="cargo" class="form-control">
-                                    <option value="" selected>{{ $data->form->hire_office }}</option>
-                                    @foreach ($cargos as $cargo)
-                                        <option value="{{ $cargo->id }}">{{ $cargo->nome }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="col-md-12" style="margin-bottom:12px"><small>{{ $data->form->hire_description }}</small></div>
-                            <div class="col-md-8">
-                                <input type="submit" class="form-control text-uppercase" value="{{ $data->form->btn_hire }}">
-                            </div>
-                        </form>
+                        @livewire('landing.hire-form', ['data' => $data, 'cargos' => $cargos])
                     </div>
                 </div>
             </div>
@@ -171,7 +141,8 @@
                     @endforeach
                 </div>
                 <div class="col-md-5 wow fadeInDown" data-wow-delay="0.6s">
-                    <p>{{ $data->jobs_message }} <a href="tel:{{ $data->phone_link }}"><strong>{{ $data->phone }}</strong></a>.</p>
+                    <p>{{ $data->jobs_message }} <a
+                            href="tel:{{ $data->phone_link }}"><strong>{{ $data->phone }}</strong></a>.</p>
                     <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
                         data-target="#curriculoModal">{{ $data->jobs_cta }}</button>
                 </div>
@@ -186,7 +157,9 @@
                 <div class="row">
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <h2 class="text-uppercase">{{ $data->contact_h2 }}</h2>
-                        <p>{{ $data->contact_description }} <a href="#vagas"><strong>{{ $data->jobs_h2 }}</strong></a> {{ $data->contact_above }}.</p>
+                        <p>{{ $data->contact_description }} <a
+                                href="#vagas"><strong>{{ $data->jobs_h2 }}</strong></a> {{ $data->contact_above }}.
+                        </p>
                         <address>
                             <p><a href="https://goo.gl/maps/Vtzce9oAJex" target="_blank"><i
                                         class="fa fa-map-marker"></i></a> {{ $data->address }}</p>
@@ -216,10 +189,12 @@
                                         placeholder="{{ $data->form->subject }}">
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea class="form-control" placeholder="{{ $data->form->message }}" id="mensagem" name="mensagem" rows="4"></textarea>
+                                    <textarea class="form-control" placeholder="{{ $data->form->message }}" id="mensagem" name="mensagem"
+                                        rows="4"></textarea>
                                 </div>
                                 <div class="col-md-8">
-                                    <input type="submit" class="form-control text-uppercase" value="{{ $data->form->btn_submit }}">
+                                    <input type="submit" class="form-control text-uppercase"
+                                        value="{{ $data->form->btn_submit }}">
                                 </div>
                             </form>
                         </div>
@@ -249,41 +224,18 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="curriculo" id="curriculo">
-                        <input type="hidden" id="lang" name="lang" value="pt">
-                        <input type="text" class="form-control" id="nome" name="nome"
-                            placeholder="{{ $data->form->name }}">
-                        <input type="text" class="form-control tel" id="telefone" name="telefone"
-                            placeholder="{{ $data->form->phone }}">
-                        <input type="email" class="form-control" id="email" name="email"
-                            placeholder="email">
-                        <input type="text" class="form-control" id="bairro" name="bairro"
-                            placeholder="Bairro/Cidade">
-                        <select id="cargo" name="cargo" class="form-control">
-                            <option value="0" selected>{{ $data->form->curriculum_office }}</option>
-                            @foreach ($cargos as $cargo)
-                                <option value="{{ $cargo->id }}">{{ $cargo->nome }}</option>
-                            @endforeach
-                        </select>
-                        <input type="hidden" id="lang" name="lang" value="pt">
+                    @livewire('landing.curriculum-form', ['data' => $data, 'cargos' => $cargos])
                 </div>
-                <div class="col-md-12 msg-erro"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ $data->form->btn_cancel }}</button>
-                    <button type="submit" class="btn btn-primary">{{ $data->form->btn_submit }}</button>
-                </div>
-                </form>
             </div>
         </div>
-    </div>
-    <!-- fim do modal currículo -->
-    <script src="{{ asset('js/jquery.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.singlePageNav.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('js/jquery.easy-overlay.js') }}"></script>
+        <!-- fim do modal currículo -->
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/wow.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.singlePageNav.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
+        <script src="{{ asset('js/jquery.easy-overlay.js') }}"></script>
 </body>
 
 </html>

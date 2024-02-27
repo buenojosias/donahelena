@@ -36,7 +36,7 @@
                                         <tr>
                                             <td
                                                 class="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-                                                {{ $curriculo->nome }}
+                                                <a href="{{ route('curriculos.detalhes', $curriculo) }}" wire:navigate>{{ $curriculo->nome }}</a>
                                             </td>
                                             <td class="whitespace-nowrap p-4 text-sm text-gray-500">
                                                 {{ $curriculo->cargo->nome_pt }}
