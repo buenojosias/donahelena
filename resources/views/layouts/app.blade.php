@@ -11,8 +11,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        <tallstackui:script />
+        @livewireStyles
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-        <link rel="stylesheet" href="{{ asset('build/assets/app-BO4K0AQC.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/assets/app-DJGqV_ns.css') }}">
         <script src="{{ asset('build/assets/app-CifqVuM1.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">

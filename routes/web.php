@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Livewire\CargoDetalhes;
 use App\Livewire\Cargos;
 use App\Livewire\ClienteDetalhes;
 use App\Livewire\Clientes;
@@ -22,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth', 'verified'])->group(function() {
     Route::view('/admin', 'dashboard')->name('dashboard');
     Route::get('/admin/cargos', Cargos::class)->name('cargos.index');
+    Route::get('/admin/cargos/{cargo}', CargoDetalhes::class)->name('cargos.detalhes');
     Route::get('/admin/clientes', Clientes::class)->name('clientes.index');
     Route::get('/admin/clientes/{cliente}', ClienteDetalhes::class)->name('clientes.detalhes');
     Route::get('/admin/curriculos', Curriculos::class)->name('curriculos.index');

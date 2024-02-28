@@ -13,6 +13,7 @@ class Curriculos extends Component
     public function render()
     {
         $curriculos = Curriculo::query()
+            ->where('arquivado', 0)
             ->with('cargo')
             ->orderByDesc('id')
             ->paginate();

@@ -13,6 +13,7 @@ class Clientes extends Component
     public function render()
     {
         $clientes = Cliente::query()
+
             ->with('cargo')
             ->orderByDesc('id')
             ->paginate();
