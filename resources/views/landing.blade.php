@@ -30,7 +30,7 @@
                     <span class="icon icon-bar"></span>
                 </button>
                 <a href="#" class="navbar-brand">
-                    <img src="img/logo-nav.png" alt="Dona Helena Empregos">
+                    <img src="img/logo-nav-r.png" alt="Dona Helena Empregos">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
