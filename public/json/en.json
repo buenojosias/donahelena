@@ -1,54 +1,54 @@
 {
-    "title": "Empregos Domésticos em Curitiba",
+    "title": "Dona Helena - Household Domestic Help in Bangalore",
     "nav":
         {
             "home": "Home",
-            "about": "Sobre nós",
-            "hire": "Contratar",
-            "jobs": "Vagas",
-            "contact": "Fale conosco"
+            "about": "About us",
+            "hire": "Hire",
+            "jobs": "Jobs",
+            "contact": "Contact us"
         },
-    "h1": "Empregos domésticos em Curitiba e região",
-    "description": "A Dona Helena Empregos Domésticos está há mais de 20 anos no ramo de seleção e recrutamento de empregados domésticos.",
-    "about_h2": "Sobre nós",
+    "h1": "Household and domestic help in Curitiba and region",
+    "description": "Dona Helena Empregos Domésticos has been in the recruitment and selection of domestic helpers for more than 20 years.",
+    "about_h2": "About us",
     "abouts": [
-        "Nossa empresa está no ramo doméstico há mais de 20 anos, priorizando sempre o atendimento diferenciado de cada cliente e as referências atuais dos dois últimos empregos de cada funcionário, assim como a checagem de seu CPF e os antecedentes criminais.",
-        "Depois de analisado, passamos para o cliente todas as referências das candidatas através do Whatsapp ou e-mail.",
-        "Nos comprometemos a atender cada cliente de uma maneira séria e transparente, passando todas a informações possíveis e deixando assim, você cliente, seguro de um bom atendimento.",
-        "As entrevistas são feitas na agência ou diretamente na casa do cliente, sempre acompanhado de um funcionário já pré selecionado."
+        "Our company has been in the domestic business for more than 20 years, always prioritizing the differentiated service of each client and the current references of the last two jobs of each employee, as well as checking their CPF and criminal records.",
+        "Once analyzed, we pass on to the client all references of the candidates through Whatsapp or email.",
+        "We are committed to serving each client in a serious and transparent manner, passing all possible information and thus leaving you, client, sure of a good care.",
+        "Interviews are done at the agency or directly at the client's home, always accompanied by a pre-selected employee."
     ],
-    "excelence_h2": "20 anos de excelência",
-    "excelence": "Com mais de uma década e meia de atuação, já realizamos diversos contratos, resultando em vários clientes satisfeitos.",
-    "hire_h2": "Contratar",
+    "excelence_h2": "20 years of excellence",
+    "excelence": "With more than a decade and a half of performance, we have already made several contracts, resulting in several satisfied customers.",
+    "hire_h2": "Hire",
     "hires": [
-        "Precisando contratar com a garantia de segurança e qualidade?",
-        "Deixe seus dados no formulário que entraremos em contato o mais breve possível.",
-        "Nosso rigoroso critério de seleção garante toda segurança e comodidade para você e sua família."
+        "Need to contract with the guarantee of safety and quality?",
+        "Leave your data in the form that we will contact as soon as possible.",
+        "Our strict selection criteria guarantee all safety and comfort for you and your family."
     ],
-    "jobs_h2": "Vagas disponíveis",
-    "jobs_message": "Se interessou por uma das vagas? Envie seu currículo clicando no botão abaixo ou entre em contato conosco pelo",
-    "jobs_cta": "Enviar currículo",
+    "jobs_h2": "Available jobs",
+    "jobs_message": "Interested in one of the vacant jobs? Submit your resume by clicking the button below or contact us by",
+    "jobs_cta": "Submit resume",
     "phone_link": "41991918597",
-    "phone": "(41) 99191-8597",
-    "contact_h2": "Fale conosco",
-    "contact_description": "A Dona Helena Empregos está pronta para te atender. Se estiver procurando um emprego, preencha a ficha na seção",
-    "contact_above": "acima",
-    "address": "Av. República Argentina, 1237 - 8º andar",
-    "reference": "Próximo à estação tubo Dom Pedro I",
+    "phone": "(+5541) 99191-8597",
+    "contact_h2": "Contact us",
+    "contact_description": "Dona Helena Empregos is ready to assist you. If you are looking for a job, fill out the form in the",
+    "contact_above": "section above",
+    "address": "Avenue República Argentina, 1237 - 8th floor",
+    "reference": "Nearby to Dom Pedro I tube station",
 
     "form":
     {
-        "name": "nome",
-        "phone": "Telefone",
-        "email": "E-mail",
-        "location": "Bairro/Cidade",
-        "hire_office": "Cargo solicitado",
-        "curriculum_office": "Cargo desejado",
-        "subject": "Assunto",
-        "message": "Mensagem",
-        "btn_hire": "Enviar dados",
-        "btn_submit": "ENVIAR",
-        "btn_cancel": "CANCELAR",
-        "hire_description": "Este espaço é destinado a contratantes. Caso esteja procurando um emprego, role a página e clique em Enviar currículo."
+        "name": "Your name",
+        "phone": "Phone number",
+        "email": "Email",
+        "location": "Neighborhood/City",
+        "hire_office": "Requested role",
+        "curriculum_office": "Desired job title",
+        "subject": "Subject",
+        "message": "Message",
+        "btn_hire": "Send data",
+        "btn_submit": "SEND",
+        "btn_cancel": "CANCEL",
+        "hire_description": "This space is intended for contractors. If you are looking for a job, scroll down the page and click Submit Resume."
     }
 }
